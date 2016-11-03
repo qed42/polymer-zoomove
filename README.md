@@ -4,6 +4,8 @@ A polymer element to use zoomove jquery plugin
 
 ## Using **zoomove-polymer** Element in your Project
 
+## Demo - https://qed42.github.io/polymer-zoomove
+
 Install this using bower
 
 ```
