@@ -1,0 +1,77 @@
+<link rel="import" href="../polymer/polymer.html">
+<!-- ZooMove CSS minified -->
+<link rel="stylesheet" href="../zoomove/dist/zoomove.min.css">
+
+<!-- jQuery CDN JS minified (must) -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- ZooMove JS minified -->
+<script src="../zoomove/dist/zoomove.min.js"></script>
+<!--
+`polymer-zoomove`
+A polymer element to use zoomove jquery plugin
+
+@demo demo/index.html
+-->
+
+<dom-module id="polymer-zoomove">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      :host .zoo-item{
+        margin: 0;
+      }
+    </style>
+    <figure
+      id="zoos"
+      class="zoo-item"
+      data-zoo-image="{{imagePath}}"
+      data-zoo-scale="{{imageScale}}"
+      data-zoo-move="{{imageMove}}"
+      data-zoo-over="{{imageOver}}"
+      data-zoo-cursor="{{imageCover}}"></figure>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'polymer-zoomove',
+
+      properties: {
+        imagePath: {
+          type: String,
+          value: ""
+        },
+        imageScale: {
+          type: Number,
+          value: 2
+        },
+        imageMove: {
+          type: Boolean,
+          value: true
+        },
+        imageOver: {
+          type: Boolean,
+          value: false
+        },
+        imageCover: {
+          type: Boolean,
+          value: false
+        }
+      },
+      ready: function() {
+        this.async(function() {
+          $(this.$.zoos).ZooMove({
+            image: this.imagePath,
+           	scale: this.imageScale,
+           	move: this.imageMove,
+           	over: this.imageCover,
+           	cursor: this.imageOver
+          });
+        });
+      }
+    });
+  </script>
+</dom-module>
