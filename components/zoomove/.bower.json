@@ -1,0 +1,46 @@
+{
+  "name": "zoomove",
+  "version": "1.2.0",
+  "description": "Enlarges the image with the mouse hover and move",
+  "repository": "https://github.com/thompsonemerson/zoomove",
+  "homepage": "http://thompsonemerson.github.io/zoomove",
+  "main": [
+    "dist/zoomove.min.js",
+    "dist/zoomove.min.css"
+  ],
+  "authors": [
+    "Emerson Thompson <thompson.emerson@gmail.com>"
+  ],
+  "license": "http://thompsonemerson.mit-license.org",
+  "keywords": [
+    "zoomove",
+    "zoom",
+    "move",
+    "hover",
+    "mouseover",
+    "jquery",
+    "javascript",
+    "image"
+  ],
+  "moduleType": [],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    ".editorconfig",
+    ".gitignore",
+    ".travis.yml",
+    "component.json",
+    "package.json",
+    "gruntfile.js",
+    "src"
+  ],
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.0",
+    "commit": "28924a45e17107aa4253b814b1e557befd086ae2"
+  },
+  "_source": "https://github.com/thompsonemerson/zoomove.git",
+  "_target": "^1.2.0",
+  "_originalSource": "zoomove"
+}
