@@ -1,42 +1,42 @@
-# **zoomove-polymer** Element
+# **polymer-zoomove** Element
 
 A polymer element to use zoomove jquery plugin
 
-## Using **zoomove-polymer** Element in your Project
+## Using **polymer-zoomove** Element in your Project
 
 ## Demo - https://qed42.github.io/polymer-zoomove
 
 Install this using bower
 
 ```
-$ bower install zoomove-polymer --save-dev
+$ bower install polymer-zoomove --save-dev
 ```
 
 Add the element element using html imports
 
 ```
-<link rel="import" href="../zoomove-polymer.html">
+<link rel="import" href="../polymer-zoomove.html">
 ```
 
 And you can now use the tag as follows,
 ```
 
-<zoomove-polymer
+<polymer-zoomove
   image-path="images/example.jpg"
   image-cover="false">
-</zoomove-polymer>
+</polymer-zoomove>
 
 
-<zoomove-polymer
+<polymer-zoomove
   image-path="images/example.jpg"
   image-scale="5">
-</zoomove-polymer>
+</polymer-zoomove>
 
 
-<zoomove-polymer
+<polymer-zoomove
   image-path="http://lorempixel.com/600/600/animals/"
   image-cover="true">
-</zoomove-polymer>
+</polymer-zoomove>
 
 ```
 ### Available attributes
